@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/yufengliu/static/css/main.31d6cfe0.css",
-    "main.js": "/yufengliu/static/js/main.650505e0.js",
-    "index.html": "/yufengliu/index.html",
-    "main.650505e0.js.map": "/yufengliu/static/js/main.650505e0.js.map"
+    "main.css": "/static/css/main.31d6cfe0.css",
+    "main.js": "/static/js/main.650505e0.js",
+    "index.html": "/index.html",
+    "main.650505e0.js.map": "/static/js/main.650505e0.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
