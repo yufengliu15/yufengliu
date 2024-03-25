@@ -4,6 +4,6 @@
 
 `git clone https://github.com/yufengliu15/yufengliu.git`
 
-Go into directory and run:
+Go into directory and run: `npm install`
 
-`npm install`
+To start app type: `npm start`
