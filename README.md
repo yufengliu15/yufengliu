@@ -6,4 +6,8 @@
 
 Go into directory and run: `npm install`
 
-To start app type: `npm start`
+# Deployment
+
+To deploy app locally: `npm start`
+
+To deploy to gh-pages branch: `npm run deploy`
