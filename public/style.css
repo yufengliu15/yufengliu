@@ -1,0 +1,15 @@
+/* global styling */
+
+body {
+    background-color: #F5f589;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+b {
+    color: #00B2FF;
+}
