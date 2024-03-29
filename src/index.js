@@ -15,7 +15,7 @@ const router = createBrowserRouter([
       element: <HomePage></HomePage>,
     },
     {
-        path: "project",
+        path: "https://yufengliu.tech/project",
         element: <ProjectPage></ProjectPage>
     },
     {
