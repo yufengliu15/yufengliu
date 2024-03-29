@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.31d6cfe0.css",
-    "main.js": "/static/js/main.650505e0.js",
+    "main.css": "/static/css/main.8bfd7680.css",
+    "main.js": "/static/js/main.f8727d7b.js",
+    "static/media/introbackground.jpeg": "/static/media/introbackground.75c1997e86f36e3c0f0e.jpeg",
+    "static/media/logo.png": "/static/media/logo.836e0963166c06aa73bf.png",
+    "static/media/Yufeng_Liu_Resume.pdf": "/static/media/Yufeng_Liu_Resume.11d3e37294211e5886c8.pdf",
     "index.html": "/index.html",
-    "main.650505e0.js.map": "/static/js/main.650505e0.js.map"
+    "main.8bfd7680.css.map": "/static/css/main.8bfd7680.css.map",
+    "main.f8727d7b.js.map": "/static/js/main.f8727d7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.650505e0.js"
+    "static/css/main.8bfd7680.css",
+    "static/js/main.f8727d7b.js"
   ]
 }
