@@ -1,0 +1,28 @@
+.text-area {
+    margin: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.header {
+    padding: 2px;
+}
+
+u {
+    font-size: 40px;
+}
+
+.media-links{
+    padding-top: 10px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    padding-left: 2px;
+    padding-right: 2px;
+}
