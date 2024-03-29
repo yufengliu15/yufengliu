@@ -4,6 +4,7 @@ body {
     background-color: #F5f589;
     max-width: 100%;
     overflow-x: hidden;
+    font-size: x-large;
 }
 
 body::-webkit-scrollbar {
