@@ -6,8 +6,8 @@ import { Resume, Link} from '../../assets';
 function HomePage() {
 
   // MM/DD/YYYY
-  let lastModifiedWebsiteDate = "03/28/2024";
-  let lastModifiedResumeDate = "02/29/2024";
+  let lastModifiedWebsiteDate = "05/15/2024";
+  let lastModifiedResumeDate = "05/15/2024";
 
   return (
     <div className="homepage">
@@ -57,7 +57,7 @@ function HomePage() {
             Like the <a href="https://typeof.net/Iosevka/" target="_blank"> <b>font<img src={Link} width="12px" height="12px"></img></b></a>?
             <br></br>
             <br></br>
-            Website last edited (MM/DD/YYYY): {lastModifiedWebsiteDate}
+            Website last edited: {lastModifiedWebsiteDate}
         </div>
         <br></br>
         <br></br>
