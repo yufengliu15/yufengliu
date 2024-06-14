@@ -6,8 +6,8 @@ import { Resume, Link} from '../../assets';
 function HomePage() {
 
   // MM/DD/YYYY
-  let lastModifiedWebsiteDate = "05/15/2024";
-  let lastModifiedResumeDate = "05/15/2024";
+  let lastModifiedWebsiteDate = "06/13/2024";
+  let lastModifiedResumeDate = "06/13/2024";
 
   return (
     <div className="homepage">
