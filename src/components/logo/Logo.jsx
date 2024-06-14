@@ -8,6 +8,7 @@ function Logo() {
     <div>
         <div className='logo'>
           <img className="logo-img"src={LogoSrc}></img>
+          <br></br>
         </div>
     </div>
   )

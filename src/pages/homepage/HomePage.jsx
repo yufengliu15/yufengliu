@@ -62,7 +62,7 @@ function HomePage() {
         <br></br>
         <br></br>
         <br></br>
-        
+
         <Logo></Logo>
     </div>
   )
