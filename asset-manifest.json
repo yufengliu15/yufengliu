@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.505334f8.css",
-    "main.js": "/static/js/main.f8727d7b.js",
+    "main.css": "/static/css/main.0147dbb1.css",
+    "main.js": "/static/js/main.6f810e21.js",
     "static/media/introbackground.jpeg": "/static/media/introbackground.75c1997e86f36e3c0f0e.jpeg",
     "static/media/logo.png": "/static/media/logo.836e0963166c06aa73bf.png",
-    "static/media/Yufeng_Liu_Resume.pdf": "/static/media/Yufeng_Liu_Resume.11d3e37294211e5886c8.pdf",
+    "static/media/Yufeng_Liu_Resume.pdf": "/static/media/Yufeng_Liu_Resume.d543bbef40822bd43eef.pdf",
     "index.html": "/index.html",
-    "main.505334f8.css.map": "/static/css/main.505334f8.css.map",
-    "main.f8727d7b.js.map": "/static/js/main.f8727d7b.js.map"
+    "main.0147dbb1.css.map": "/static/css/main.0147dbb1.css.map",
+    "main.6f810e21.js.map": "/static/js/main.6f810e21.js.map"
   },
   "entrypoints": [
-    "static/css/main.505334f8.css",
-    "static/js/main.f8727d7b.js"
+    "static/css/main.0147dbb1.css",
+    "static/js/main.6f810e21.js"
   ]
 }
