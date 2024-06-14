@@ -1,0 +1,68 @@
+.thumbnail {
+    height: 200px;
+    padding: 3px;
+}
+
+.body{
+    margin: 3%;
+}
+
+
+/* Frame page */
+
+.sample-content {
+    padding: 2.5% 7.5%;
+    margin: 0 auto;
+}
+
+.subhead {
+    font-size: 1.2em;
+}
+
+#rowDateExact,
+#rowDateRange {
+    padding: 16px;
+    background: #f5f5f5;
+    margin-bottom: 16px;
+}
+
+#images_empty {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.mdl-list__item {
+    padding: 0;
+    overflow: visible;
+}
+
+.mdl-list__item--two-line {
+    height: 96px;
+    width: 840px;
+}
+
+.fancybox-bg {
+    opacity: 1 !important;
+}
+
+.loading-dialog {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+    z-index: 1000;
+    text-align: center;
+}
+
+.loading-dialog h1 {
+    color: #ffffff;
+}
+
+#error {
+    background: lightcoral;
+    padding: 1.25% 7.5%;
+}
