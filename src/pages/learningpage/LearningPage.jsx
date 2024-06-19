@@ -6,8 +6,11 @@ import { Navbar, Logo } from '../../components'
 function LearningPage() {
   return (
     <div>
-        <Navbar></Navbar>
-      learning page is under construction!
+      <Navbar></Navbar>
+      <div className='body'>
+        <h1>Blog</h1>
+        Welcome to my blog page!
+      </div>
       <br></br>
       <br></br>
       <Logo></Logo>

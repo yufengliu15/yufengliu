@@ -14,10 +14,10 @@ const router = createBrowserRouter([
       path: "/",
       element: <HomePage></HomePage>,
     },
-    {
-        path: "project",
-        element: <ProjectPage></ProjectPage>
-    },
+    // {
+    //     path: "project",
+    //     element: <ProjectPage></ProjectPage>
+    // },
     {
         path: "learning",
         element: <LearningPage></LearningPage>

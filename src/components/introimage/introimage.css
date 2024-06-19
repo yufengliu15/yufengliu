@@ -3,8 +3,10 @@
     /* may need to adjust these values for future photos
        for future photos try to maintain a 2:1 aspect ratio (2 width for every 1 height)
     */
+    position: relative;
     width: 105%;
     height: auto;
+    top: -20px;
 
     /* these are future proof */
     display: block;
