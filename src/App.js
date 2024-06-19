@@ -1,6 +1,6 @@
 import React from 'react'
 // figure out background later
-import { Navbar, Background } from "./components/index.js"
+import { Navbar} from "./components/index.js"
 
 const App = () => {
   return (
