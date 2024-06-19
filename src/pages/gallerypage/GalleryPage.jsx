@@ -142,7 +142,7 @@ function GalleryPage() {
         <div id="images-container">
           <br></br>
           {images && images.map((item, i) => {
-            if (item.mimeType == 'image/jpeg' || item.mimeType == 'image/heif') {
+            if (item.mimeType === 'image/jpeg' || item.mimeType === 'image/heif') {
               const thumbnailUrl = `https://drive.google.com/thumbnail?id=${item.id}`;
               const fullUrl = `https://drive.google.com/file/d/${item.id}/view?usp=drive_link`;
 
