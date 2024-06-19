@@ -63,7 +63,7 @@ function HomePage() {
                 Website was <b>built and designed by me</b>. Pictures are also all taken by me.
                 <br></br>
                 <br></br>
-                Like the <a href="https://typeof.net/Iosevka/" target="_blank"> <b>font<img src={Link} width="12px" height="12px"></img></b></a>?
+                Like the <a href="https://typeof.net/Iosevka/" target="_blank"> <b>font<img src={Link} width={linkSize} height={linkSize}></img></b></a>?
                 <br></br>
                 <br></br>
                 Website last edited: {lastModifiedWebsiteDate}
