@@ -20,8 +20,11 @@ function HomePage() {
 
     return (
         <div className="homepage">
-            <Navbar></Navbar>
-            <IntroImage></IntroImage>
+            <div className='navbar-image'>
+                <Navbar></Navbar>
+                <IntroImage></IntroImage>
+            </div>
+
             <div className="text-area">
                 <div className="header">
                     <u>About Me</u>
