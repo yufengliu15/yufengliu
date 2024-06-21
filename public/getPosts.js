@@ -21,7 +21,7 @@ const getPosts = () => {
                     }
                     return acc
                 }
-                const parseMetadata = ({lines, metadataIndices}) => {
+                const parseMetadata = ({ lines, metadataIndices }) => {
                     if (metadataIndices.length > 0) {
                         let metadata = lines.slice(metadataIndices[0] + 1, metadataIndices[1])
                         metadata.forEach(line => {
@@ -30,7 +30,7 @@ const getPosts = () => {
                         return obj
                     }
                 }
-                const parseContent = ({lines, metadataIndices}) => {
+                const parseContent = ({ lines, metadataIndices }) => {
                     if (metadataIndices.length > 0) {
                         lines = lines.slice(metadataIndices[1] + 1, lines.length)
                     }
@@ -38,31 +38,37 @@ const getPosts = () => {
                 }
                 const lines = contents.split("\n")
                 const metadataIndices = lines.reduce(getMetadataIndices, [])
-                const metadata = parseMetadata({lines, metadataIndices})
-                const content = parseContent({lines, metadataIndices})
-                const date = new Date(metadata.published)
+                const metadata = parseMetadata({ lines, metadataIndices })
+                const content = parseContent({ lines, metadataIndices })
+                var date = new Date(metadata.published)
+                if (metadata.updated !== "null") {
+                    date = new Date(metadata.updated)
+                }
                 const timestamp = date.getTime() / 1000
                 post = {
                     id: timestamp,
                     title: metadata.title ? metadata.title : "No title given",
                     published: metadata.published ? metadata.published : "No date given",
-                    updated: (metadata.updated === "null") ? metadata.published : metadata.updated,
+                    updated: (metadata.updated !== "null") ? metadata.updated : null,
                     content: content ? content : "No content given",
                 }
-                postlist.push(post)
-                if (i === files.length - 1) {
-                    const sortedList = postlist.sort ((a, b) => {
-                        return a.id < b.id ? 1 : -1
-                    })
-                    let data = JSON.stringify(sortedList)
-                    fs.writeFileSync("src/posts.json", data)
-                }
-                
-                console.log(`postlist: ${JSON.stringify(postlist)}`)
+                setTimeout(() => {
+                    postlist.push(post)
+                    if (i === files.length - 1) {
+                        setTimeout(() => {
+                            const sortedList = postlist.sort((a, b) => {
+                                return a.id < b.id ? 1 : -1
+                            })
+                            let data = JSON.stringify(sortedList)
+                            fs.writeFileSync("src/posts.json", data)
+                            console.log(`Sent ${sortedList.length} blog posts to posts.json!`)
+                        }, 500)
+                    }
+                }, 50)
             })
         })
     })
-    return 
+    return
 }
 
 getPosts()

@@ -1,0 +1,68 @@
+.postlisting {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    margin-top: -2%;
+
+}
+
+.postcard-holder {
+    padding-bottom: 30px;
+}
+
+.postcard {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0% 2%;
+}
+
+.postcard:hover {
+    background-color: rgba(227, 54, 255, 0.5);
+}
+
+
+
+/* Markdown css below */
+/* a:any-link {
+    color: #008bc7;
+}
+
+h1 {
+    color: #ef5350;
+}
+
+h2 {
+    color: #ffa726;
+}
+
+h3 {
+    color: #ffd54f;
+}
+
+h4 {
+    color: #a5d6a7;
+}
+
+h5 {
+    color: #90caf9;
+}
+
+h6 {
+    color: #ce93d8;
+}
+
+tr {
+    border-top: 1px solid #c6cbd1;
+    background: #f1f1f1;
+}
+
+th,
+td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+table tr:nth-child(2n) {
+    background: #dcdcdc;
+} */
