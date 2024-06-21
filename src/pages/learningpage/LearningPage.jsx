@@ -10,11 +10,10 @@ function LearningPage() {
       <Navbar></Navbar>
       <div className='body'>
         <h1>Blog</h1>
-        Welcome to my blog page! This page was made so that plog posts are written in Markdown, then using 'react-markdown' to translate it into JSX.
+        Welcome to my blog page! This page was made so that blog posts are written in Markdown, then using 'react-markdown' to translate it into JSX.
         <br></br>
         <br></br>
         There are currently <b>{postList.length}</b> posts.
-
         <ListPosts posts={postList}></ListPosts>
       </div>
       <br></br>
