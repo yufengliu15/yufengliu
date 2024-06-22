@@ -3,7 +3,7 @@ title: about-the-website
 user_title: About The Website
 published: June 22, 2024
 updated: null
-tags: #published #project
+tags: project
 ---
 
 Welcome to my little corner on the internet! This website was made with the intention of putting my name out there into the world. I got into web development back in February of 2024, simply because I liked being able to easily showcase my work to others. 
