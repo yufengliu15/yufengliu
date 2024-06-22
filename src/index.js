@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {
     createBrowserRouter,
     RouterProvider,
+    Navigate
 } from "react-router-dom";
 
 import App from './App';
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
     {
         path: "gallery",
         element: <GalleryPage></GalleryPage>
+    },
+    {
+        path: "*",
+        element: <Navigate to={"/"}></Navigate>
     },
     // {
     //     path: "project",
