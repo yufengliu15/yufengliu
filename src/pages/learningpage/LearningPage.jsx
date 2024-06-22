@@ -13,7 +13,8 @@ function LearningPage() {
         Welcome to my learnings page! This is where I share what the things I have learned so far, in a blog style format. This page was made so that blog posts are written in Markdown, then using 'react-markdown' to translate it into JSX.
         <br></br>
         <br></br>
-        There are currently <b>{postList.length}</b> posts.
+        To be added!
+        {/* There are currently <b>{postList.length}</b> posts. */}
         <ListPosts posts={postList}></ListPosts>
       </div>
       <br></br>
