@@ -1,0 +1,66 @@
+.markdown-body {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.markdown a:any-link {
+    color: #008bc7;
+}
+
+.markdown-title h1 {
+    background-image: linear-gradient(#ef5350, #e57373, #f06292);
+    background-clip: text;
+    color: transparent;
+}
+
+.markdown h1 {
+    background-image: linear-gradient(#ef5350, #e57373, #f06292);
+    background-clip: text;
+    color: transparent;
+}
+
+.markdown h2 {
+    background-image: linear-gradient(#ffa726, #ffb74d, #ffcc80);
+    background-clip: text;
+    color: transparent;
+}
+
+.markdown h3 {
+    background-image: linear-gradient(#ffd54f, #ffd54f, #ffe082);
+    background-clip: text;
+    color: transparent;
+}
+
+.markdown h4 {
+    background-image: linear-gradient(#a5d6a7, #aed581, #e6ee9c);
+    background-clip: text;
+    color: transparent;
+}
+
+.markdown h5 {
+    background-image: linear-gradient(#90caf9, #80deea, #80cbc4);
+    background-clip: text;
+    color: transparent;
+}
+
+.markdown h6 {
+    background-image: linear-gradient(#ce93d8, #b39ddb, #f8bbd0);
+    background-clip: text;
+    color: transparent;
+}
+
+.markdown tr {
+    border-top: 1px solid #c6cbd1;
+    background: #f1f1f1;
+}
+
+.markdown th,td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+.markdown table tr:nth-child(2n) {
+    background: #dcdcdc;
+}

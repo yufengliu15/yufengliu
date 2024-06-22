@@ -4,16 +4,8 @@ import "./homepage.css"
 import { Resume, Link } from '../../assets';
 
 function HomePage() {
-
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    var yyyy = today.getFullYear();
-
-    today = dd + '/' + mm + '/' + yyyy;
-
     // DD/MM/YYYY
-    let lastModifiedWebsiteDate = today;
+    let lastModifiedWebsiteDate = "20/06/2024";
     let lastModifiedResumeDate = "13/06/2024";
 
     const linkSize = "14px";

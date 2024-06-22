@@ -1,0 +1,24 @@
+.postlisting {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    margin-top: -1%;
+
+}
+
+.postcard-holder {
+    padding-bottom: 30px;
+}
+
+.postcard {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0% 2%;
+    background-color: rgba(227, 54, 255, 0.5);
+}
+
+.postcard:hover {
+    background-color: rgba(227, 54, 255, 0.4);
+    cursor: pointer;
+}

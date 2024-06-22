@@ -11,3 +11,6 @@ Go into directory and run: `npm install`
 To deploy app locally: `npm start`
 
 To deploy to gh-pages branch: `npm run deploy`
+
+# Generate Blog Post Objects
+`npm run server`
