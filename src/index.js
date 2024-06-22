@@ -17,13 +17,11 @@ const router = createBrowserRouter([
     },
     {
         path: "learning",
-        element: <LearningPage></LearningPage>,
-            
-        
+        element: <LearningPage></LearningPage>,    
     },
     {
         path: "learning/:id",
-        element: <Post></Post>
+        element: <Post></Post>,
     },
     {
         path: "gallery",

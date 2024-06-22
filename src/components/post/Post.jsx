@@ -1,8 +1,8 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import "./post.css"
 import postsList from "../../posts.json"
-import { Navbar } from "../"
+import { Navbar, Logo } from "../"
 
 // Markdown styling imports
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
@@ -16,6 +16,12 @@ import 'katex/dist/katex.min.css'
 
 const Post = () => {
     const { id } = useParams();
+
+    if (isNaN(id) || (id < 0 || id > postsList.length - 1)){
+        console.log("what are you trying to do huh?")
+        return <Navigate to={"/"}/>;
+    }
+
     const post = postsList[id];
 
     const customStyle = {
@@ -30,24 +36,25 @@ const Post = () => {
         <div>
             <Navbar></Navbar>
             <div className="markdown-body">
-            <Markdown className="markdown" remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex, rehypeRaw]} components={{
-                code: function ({ node, inline, className, children, ...props }) {
-                    const match = /language-(\w+)/.exec(className || '');
+                <Markdown className="markdown" remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex, rehypeRaw]} components={{
+                    code: function ({ node, inline, className, children, ...props }) {
+                        const match = /language-(\w+)/.exec(className || '');
 
-                    return !inline && match ? (
-                        <SyntaxHighlighter style={solarizedlight} customStyle={customStyle} PreTag="div" language={match[1]} {...props}>
-                            {String(children).replace(/\n$/, '')}
-                        </SyntaxHighlighter>
-                    ) : (
-                        <code className={className} {...props}>
-                            {children}
-                        </code>
-                    );
-                },
-            }}>{post.content}</Markdown>
+                        return !inline && match ? (
+                            <SyntaxHighlighter style={solarizedlight} customStyle={customStyle} PreTag="div" language={match[1]} {...props}>
+                                {String(children).replace(/\n$/, '')}
+                            </SyntaxHighlighter>
+                        ) : (
+                            <code className={className} {...props}>
+                                {children}
+                            </code>
+                        );
+                    },
+                }}>{post.content}</Markdown>
+            </div>
+            <Logo></Logo>
         </div>
-        </div>
-        
+
     )
 };
 
