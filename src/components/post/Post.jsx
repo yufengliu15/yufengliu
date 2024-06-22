@@ -15,15 +15,19 @@ import remarkMath from 'remark-math'
 import 'katex/dist/katex.min.css'
 
 const Post = () => {
-    const { id } = useParams();
+    const { title } = useParams();
+    var post = null;
 
-    if (isNaN(id) || (id < 0 || id > postsList.length - 1)){
-        console.log("what are you trying to do huh?")
-        return <Navigate to={"/"}/>;
+    for (var i in postsList) {
+        if (postsList[i].title === title){
+            post = postsList[i];
+        }
     }
-
-    const post = postsList[id];
-
+    if (post === null){
+        console.log("what are you trying to do huh?")
+        return <Navigate to="/"/>
+    }
+    
     const customStyle = {
         lineHeight: '1.5',
         fontSize: '1rem',
@@ -36,6 +40,14 @@ const Post = () => {
         <div>
             <Navbar></Navbar>
             <div className="markdown-body">
+                <h1 className="title">{post.user_title}</h1>
+                Published on {post.published} {(post.updated !== null) ? '| Updated on ' + post.updated : ''}
+                <br></br>
+                Read time: {post.readTime} minutes
+                <br></br>
+                <br></br>
+                tags: {post.tags}
+                <hr></hr>
                 <Markdown className="markdown" remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex, rehypeRaw]} components={{
                     code: function ({ node, inline, className, children, ...props }) {
                         const match = /language-(\w+)/.exec(className || '');

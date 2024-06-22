@@ -5,7 +5,7 @@ import { Resume, Link } from '../../assets';
 
 function HomePage() {
     // DD/MM/YYYY
-    let lastModifiedWebsiteDate = "20/06/2024";
+    let lastModifiedWebsiteDate = "22/06/2024";
     let lastModifiedResumeDate = "13/06/2024";
 
     const linkSize = "14px";
@@ -22,7 +22,7 @@ function HomePage() {
                     <u>About Me</u>
                 </div>
 
-                I am a second year <b>Honours Computer Science </b> student at Carleton University located in Ottawa, Ontario. A lot of things interest me, ranging from programming, AI and robotics, to Formula 1, playing music and travelling.
+                I am a third year <b>Honours Computer Science </b> student at Carleton University located in Ottawa, Ontario. A lot of things interest me, ranging from programming, AI and robotics, to Formula 1, playing music and travelling.
                 <br></br>
                 <br></br>
                 You can find the online version of my resume <a href={Resume} target="_blank"><b>here<img src={Link} width={linkSize} height={linkSize}></img></b></a> (last updated {lastModifiedResumeDate})

@@ -6,6 +6,40 @@ const dirPath = path.join(__dirname, "../src/assets/blogcontent")
 let postlist = []
 let pagelist = []
 
+function readTime(content) {
+    const WPS = 275 / 60
+
+    var images = 0
+    const regex = /\w/
+
+    let words = content.split(' ').filter((word) => {
+        if (word.includes('<img')) {
+            images += 1
+        }
+        return regex.test(word)
+    }).length
+
+    var imageAdjust = images * 4
+    var imageSecs = 0
+    var imageFactor = 12
+
+    while (images) {
+        imageSecs += imageFactor
+        if (imageFactor > 3) {
+            imageFactor -= 1
+        }
+        images -= 1
+    }
+
+    const minutes = Math.ceil(((words - imageAdjust) / WPS + imageSecs) / 60)
+
+    if (minutes < 1){
+        return 1
+    }
+    
+    return minutes
+}
+
 const getPosts = () => {
     fs.readdir(dirPath, (err, files) => {
         if (err) {
@@ -40,16 +74,21 @@ const getPosts = () => {
                 const metadataIndices = lines.reduce(getMetadataIndices, [])
                 const metadata = parseMetadata({ lines, metadataIndices })
                 const content = parseContent({ lines, metadataIndices })
+                const read_time = readTime(content)
                 var date = new Date(metadata.published)
                 if (metadata.updated !== "null") {
                     date = new Date(metadata.updated)
                 }
                 const timestamp = date.getTime() / 1000
+
                 post = {
                     id: timestamp,
                     title: metadata.title ? metadata.title : "No title given",
+                    user_title: metadata.user_title ? metadata.user_title : "No title given",
                     published: metadata.published ? metadata.published : "No date given",
                     updated: (metadata.updated !== "null") ? metadata.updated : null,
+                    readTime: read_time,
+                    tags: metadata.tags ? metadata.tags : "No tags given",
                     content: content ? content : "No content given",
                 }
                 setTimeout(() => {
