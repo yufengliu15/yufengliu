@@ -15,15 +15,19 @@ import remarkMath from 'remark-math'
 import 'katex/dist/katex.min.css'
 
 const Post = () => {
-    const { id } = useParams();
+    const { title } = useParams();
+    var post = null;
 
-    if (isNaN(id) || (id < 0 || id > postsList.length - 1)){
-        console.log("what are you trying to do huh?")
-        return <Navigate to={"/"}/>;
+    for (var i in postsList) {
+        if (postsList[i].title === title){
+            post = postsList[i];
+        }
     }
-
-    const post = postsList[id];
-
+    if (post === null){
+        console.log("what are you trying to do huh?")
+        return <Navigate to="/"/>
+    }
+    
     const customStyle = {
         lineHeight: '1.5',
         fontSize: '1rem',

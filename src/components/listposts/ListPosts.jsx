@@ -12,10 +12,10 @@ function ListPosts({ posts }) {
                 {posts.length &&
                     posts.map((post, i) => {
                         return (
-                            <div key={i} className='postcard-holder'>
-                                <Link to={`/learning/${i}`}>
+                            <div key={post.title} className='postcard-holder'>
+                                <Link to={`/learning/${post.title}`}>
                                     <div className="postcard">
-                                        <h2>{post.title}</h2>
+                                        <h2>{post.user_title}</h2>
                                         <h5>Published on {post.published} {(post.updated !== null) ? '| Updated on ' + post.updated : ''} </h5>
                                     </div>
                                 </Link>

@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         element: <LearningPage></LearningPage>,    
     },
     {
-        path: "learning/:id",
+        path: "learning/:title",
         element: <Post></Post>,
     },
     {

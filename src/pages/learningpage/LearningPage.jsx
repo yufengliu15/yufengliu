@@ -10,7 +10,7 @@ function LearningPage() {
       <Navbar></Navbar>
       <div className='body'>
         <h1>Learnings</h1>
-        Welcome to my learnings page! This is where I share what the things I have learned so far, in a blog style format. This page was made so that blog posts are written in Markdown, then using 'react-markdown' to translate it into JSX.
+        Welcome to my learnings page! This is where I share the things that interest me, in a blog style format. This page was made so that blog posts are written in Markdown, then using 'react-markdown' to translate it into JSX.
         <br></br>
         <br></br>
         To be added!
