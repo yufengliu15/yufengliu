@@ -40,6 +40,12 @@ const Post = () => {
         <div>
             <Navbar></Navbar>
             <div className="markdown-body">
+                <h1 className="title">{post.user_title}</h1>
+                Published on {post.published} {(post.updated !== null) ? '| Updated on ' + post.updated : ''}
+                <br></br>
+                <br></br>
+                tags: 
+                <hr></hr>
                 <Markdown className="markdown" remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex, rehypeRaw]} components={{
                     code: function ({ node, inline, className, children, ...props }) {
                         const match = /language-(\w+)/.exec(className || '');

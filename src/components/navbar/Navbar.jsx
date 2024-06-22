@@ -12,7 +12,7 @@ const Navbar = () => {
           <li><a href="gallery">Gallery</a></li>
         </ul>
 
-        <hr></hr>
+        <hr className='navbar'></hr>
       </div>
     </nav>
   )

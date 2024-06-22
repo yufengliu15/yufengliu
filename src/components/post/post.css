@@ -19,6 +19,14 @@
     color: yellow;
 }
 
+.markdown strong{
+    color: #00B2FF; 
+}
+
+.title {
+    color: #ef5350;
+}
+
 .markdown h1 {
     color: #ef5350;
 }

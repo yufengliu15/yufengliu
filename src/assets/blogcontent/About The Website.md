@@ -3,16 +3,16 @@ title: about-the-website
 user_title: About The Website
 published: June 22, 2024
 updated: null
+tags: #published #project
 ---
 
-# About The Website
 Welcome to my little corner on the internet! This website was made with the intention of putting my name out there into the world. I got into web development back in February of 2024, simply because I liked being able to easily showcase my work to others. 
 
-I was looking around for website ideas at the time and I noticed many students were either using templates, or trying to sell themselves as a product. It was then that I realized the websites that spoke to me were the ones that had their own identity. 
+I was looking around for website ideas at the time and I noticed many students were either using templates, or trying to sell themselves as a product. It was then that I realized the websites that spoke to me were the ones that had their **own identity**. 
 
-Making my website have it's own personality was the main objective in mind, and I like to think I did a good job at it. (I'm not a designer after all)
+Making my website have it's own personality was the main objective in mind, and I like to think I did a good job at it. *I'm not a designer after all*
 
-With that said, I also want to talk about how I even created this website, since I spent way too much time on it and had lots of pitfalls. (Let me flex a little)
+With that said, I also want to talk about how I even created this website, since I spent way too much time on it and had lots of hurdles. *Let me flex a little*
 ## Home Page
 My first and easiest page on the site. 
 ### Intro Image
@@ -23,7 +23,7 @@ As well, I was thinking about structuring the white box and intro text as HTML a
 After I was happy with the result, I converted the images to .webp in order to save performance. 
 
 ### Font
-I really wanted to use a monospace font, since it just looks so clean. Turns out making a custom font and importing it into a website was harder than it seemed. I had to:
+I really wanted to use a monospace font, since it just looks so clean. So I settled with **Iosevka**, where it provided a good base font for me to customize. Importing it into a website was harder than it seemed. I had to:
 - Convert to TTF, WOFF and WOFF2
 - Deal with relative links to be able to import the font properly
 - Configure the correct CSS to properly display it
@@ -51,7 +51,7 @@ I was given the header and the payload, however for the life of me I could not f
 After days of digging around I saw one Stack Overflow post that had the exact issue as me, and provided a detailed step by step on how to generate a proper token. *I will never forget you, Stack Overflow guy*
 
 #### Pitfall
-After generating a correct token (which I verified using [AdvancedRESTClient](https://www.advancedrestclient.com/)), Google Photos API still sent back an error. As a hail mary, I decided to search up "Google Photos API Service Accounts". Turns out, Google Photos API does not support service accounts. So I essentially was trying to accomplish an impossible task. 
+After generating a correct token (which I verified using [AdvancedRESTClient](https://www.advancedrestclient.com/)), Google Photos API still sent back an error. As a hail mary, I decided to search up "Google Photos API Service Accounts". Turns out, Google Photos API does not support service accounts. So I essentially was **trying to accomplish an impossible task**. 
 
 ### Google Drive API
 After that setback, I decided to switch to querying from Google Drive. While slightly less optimal, I was too stubborn to switch to an entirely different "database". 
@@ -75,3 +75,6 @@ I was able to follow a couple Youtube Videos with ease, and was quickly able to 
 Dynamic routing is where pages are dynamically created. This way, I would not have to manually create a new link every time I upload a new post. 
 
 This was pretty straightforward, and whenever I had trouble I used Bing Copilot to check for debugging ideas. 
+
+### Styling
+As you may have noticed, the styling for the posts is a little different compared to the rest of the website. At first I was not planning on having a background colour, however I noticed that it felt **boring** to read a black text with a yellow background. So, I decided to go with a similar look to how my Obsidian notes look.  

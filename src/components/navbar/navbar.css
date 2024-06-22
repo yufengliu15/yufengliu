@@ -14,7 +14,7 @@
     color: black;
 }
 
-hr {
+.navbar hr {
     margin-left: -1%;
     width: 150%;
     border-color: black;
