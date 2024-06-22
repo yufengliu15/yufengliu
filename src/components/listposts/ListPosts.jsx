@@ -15,7 +15,7 @@ function ListPosts({ posts }) {
                                 <Link to={`/learning/${post.title}`}>
                                     <div className="postcard">
                                         <h2>{post.user_title}</h2>
-                                        <h5>Published on {post.published} {(post.updated !== null) ? '| Updated on ' + post.updated : ''} </h5>
+                                        <h5>Published on {post.published} {(post.updated !== null) ? '| Updated on ' + post.updated : ''} | Read time: {post.readTime} mins | tags: {post.tags}</h5>
                                     </div>
                                 </Link>
                             </div>
