@@ -3,6 +3,7 @@ import React from 'react'
 import './learningpage.css'
 import { Navbar, Logo, ListPosts } from '../../components'
 import postList from "../../posts.json"
+import { Outlet } from 'react-router-dom'
 
 function LearningPage() {
   return (
@@ -18,6 +19,7 @@ function LearningPage() {
       </div>
       <br></br>
       <br></br>
+      <Outlet />
       <Logo></Logo>
     </div>
   )

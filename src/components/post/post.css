@@ -1,3 +1,10 @@
+.markdown-body {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
 .markdown a:any-link {
     color: #008bc7;
 }

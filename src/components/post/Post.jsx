@@ -1,5 +1,10 @@
 import React from 'react'
+import { useParams } from 'react-router-dom';
 import "./post.css"
+import postsList from "../../posts.json"
+import { Navbar } from "../"
+
+// Markdown styling imports
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { solarizedlight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import Markdown from 'react-markdown'
@@ -9,7 +14,10 @@ import rehypeRaw from 'rehype-raw'
 import remarkMath from 'remark-math'
 import 'katex/dist/katex.min.css'
 
-function Post(postJSON) {
+const Post = () => {
+    const { id } = useParams();
+    const post = postsList[id];
+
     const customStyle = {
         lineHeight: '1.5',
         fontSize: '1rem',
@@ -17,11 +25,11 @@ function Post(postJSON) {
         backgroundColor: '#363636',
         padding: '20px'
     };
-    const post = postJSON.postJSON
-    const title = post.title;
 
     return (
         <div>
+            <Navbar></Navbar>
+            <div className="markdown-body">
             <Markdown className="markdown" remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex, rehypeRaw]} components={{
                 code: function ({ node, inline, className, children, ...props }) {
                     const match = /language-(\w+)/.exec(className || '');
@@ -38,7 +46,9 @@ function Post(postJSON) {
                 },
             }}>{post.content}</Markdown>
         </div>
+        </div>
+        
     )
-}
+};
 
 export default Post
