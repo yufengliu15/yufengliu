@@ -1,5 +1,4 @@
 import React from 'react'
-import { Post } from "../"
 import "./listposts.css"
 import { Link} from "react-router-dom"
 
