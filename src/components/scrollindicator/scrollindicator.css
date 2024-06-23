@@ -1,0 +1,30 @@
+.indicator-wrapper {
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+}
+
+.indicator {
+    position: absolute;
+    bottom: 50px;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.indicator-hide {
+    animation-name: fadeOut;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    bottom: 50px;
+}

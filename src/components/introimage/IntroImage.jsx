@@ -1,5 +1,6 @@
 import React from 'react'
 import { Image } from '../../assets'
+import { ScrollIndicator } from '../'
 import './introimage.css'
 
 function IntroImage() {
@@ -7,6 +8,7 @@ function IntroImage() {
     <div>
       <div className='image-container'>
         <img className="background-image" src={Image} alt="BackgroundImage" />
+        <ScrollIndicator></ScrollIndicator>
       </div>
     </div>
 
