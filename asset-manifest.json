@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ee4d7d21.css",
-    "main.js": "/static/js/main.51141fd7.js",
+    "main.js": "/static/js/main.0ca06a1c.js",
     "static/media/introbackground.webp": "/static/media/introbackground.a68136b7ea2957425066.webp",
     "static/media/Yufeng_Liu_Resume.pdf": "/static/media/Yufeng_Liu_Resume.d543bbef40822bd43eef.pdf",
     "static/media/logo.webp": "/static/media/logo.05a8f259db39b0959d5a.webp",
@@ -67,10 +67,10 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/index.html",
     "main.ee4d7d21.css.map": "/static/css/main.ee4d7d21.css.map",
-    "main.51141fd7.js.map": "/static/js/main.51141fd7.js.map"
+    "main.0ca06a1c.js.map": "/static/js/main.0ca06a1c.js.map"
   },
   "entrypoints": [
     "static/css/main.ee4d7d21.css",
-    "static/js/main.51141fd7.js"
+    "static/js/main.0ca06a1c.js"
   ]
 }
