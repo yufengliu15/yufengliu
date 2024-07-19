@@ -5,6 +5,8 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { HomePage, LearningPage, GalleryPage } from './pages';
 import { Navbar, Post } from "./components"
 
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
 import "./globals.css"
 
 export default function App() {
@@ -16,9 +18,9 @@ export default function App() {
                 <BrowserRouter>
                     <Routes>
                         <Route index element={<HomePage />} />
-                        <Route path="learning" element={<LearningPage />} />
+                        <Route path="blog" element={<LearningPage />} />
                         <Route path="gallery" element={<GalleryPage />} />
-                        <Route path="learning/:title" element={<Post></Post>} />
+                        <Route path="blog/:title" element={<Post></Post>} />
                         <Route path="*" element={<HomePage />} />
                     </Routes>
                 </BrowserRouter>

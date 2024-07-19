@@ -38,7 +38,6 @@ const Post = () => {
 
     return (
         <div>
-            <Navbar></Navbar>
             <div className="markdown-body">
                 <h1 className="title">{post.user_title}</h1>
                 Published on {post.published} {(post.updated !== null) ? '| Updated on ' + post.updated : ''}

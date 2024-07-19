@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import useAnimateRoute from '../../hooks/useAnimatedRoute';
 import './gallerypage.css'
 import { Navbar, Logo } from '../../components'
 import { KJUR } from 'jsrsasign';
@@ -9,6 +10,7 @@ window.Buffer = window.Buffer || require("buffer").Buffer;
 
 function GalleryPage() {
   const [images, setImages] = useState([]);
+  const animationClass = useAnimateRoute()
 
   const scope = 'https://www.googleapis.com/auth/drive.readonly    https://www.googleapis.com/auth/drive.metadata.readonly';
 
@@ -129,10 +131,10 @@ function GalleryPage() {
   }, []);
 
   return (
-    <div>
-      <div className='body'>
+    <div className={animationClass}>
+      <div className='gallerypage-body'>
         <h1>Gallery</h1>
-
+        <hr></hr>
         <p>I have only recently started to indulge in the art of photography. So, here is all the photos that I am proud of.</p>
         <p>Camera: Olympus E-PL6</p>
         <p>Lens: Olympus E-PL6 14-42mm</p>
