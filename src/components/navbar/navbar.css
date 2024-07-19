@@ -5,29 +5,11 @@
     margin: 0;
     align-items: center;
     justify-content: center;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 15px;
 }
 
 .navbar-menu li a{
     text-decoration: none;
     color: black;
-}
-
-.navbar hr {
-    margin-left: -1%;
-    width: 150%;
-    border-color: black;
-}
-
-nav.sticky{
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    margin: 0;
-    padding-top: 10px;
-    margin-left: -1%;
-    padding-bottom: 0px;
-    width: 102%;
-    background-color: #F5f589;
 }

@@ -1,45 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {
-    createBrowserRouter,
-    RouterProvider,
-    Navigate
-} from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 
-import App from './App';
-import { HomePage, ProjectPage, LearningPage, GalleryPage } from './pages';
-import { Post } from "./components"
+import { HomePage, LearningPage, GalleryPage } from './pages';
+import { Navbar, Post } from "./components"
 
+import "./globals.css"
 
-const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <HomePage></HomePage>,
-    },
-    {
-        path: "learning",
-        element: <LearningPage></LearningPage>,    
-    },
-    {
-        path: "learning/:title",
-        element: <Post></Post>,
-    },
-    {
-        path: "gallery",
-        element: <GalleryPage></GalleryPage>
-    },
-    {
-        path: "*",
-        element: <Navigate to={"/"}></Navigate>
-    },
-    // {
-    //     path: "project",
-    //     element: <ProjectPage></ProjectPage>
-    // },
-
-]);
+export default function App() {
+    return (
+        <div className='background'>
+            <div className='body'>
+                <Navbar></Navbar>
+                <hr></hr>
+                <BrowserRouter>
+                    <Routes>
+                        <Route index element={<HomePage />} />
+                        <Route path="learning" element={<LearningPage />} />
+                        <Route path="gallery" element={<GalleryPage />} />
+                        <Route path="learning/:title" element={<Post></Post>} />
+                        <Route path="*" element={<HomePage />} />
+                    </Routes>
+                </BrowserRouter>
+            </div>
+        </div>
+    );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-    <RouterProvider router={router}/>
+    <App></App>
 );

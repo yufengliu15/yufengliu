@@ -130,7 +130,6 @@ function GalleryPage() {
 
   return (
     <div>
-      <Navbar></Navbar>
       <div className='body'>
         <h1>Gallery</h1>
 

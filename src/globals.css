@@ -1,0 +1,24 @@
+.body {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: solid;
+    opacity: 0.95;
+    z-index: 999;
+    background-color: #F5f589;
+}
+
+.background::before {
+    content: "";
+    position: fixed;
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle at 2px 2px, black 1px, transparent 0);
+    background-size: 25px 25px;
+    /* height: 120%; Add this line */
+}
+
+hr {
+    border: 0.5px solid black;
+}

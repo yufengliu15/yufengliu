@@ -8,7 +8,6 @@ function IntroImage() {
     <div>
       <div className='image-container'>
         <img className="background-image" src={Image} alt="BackgroundImage" />
-        <ScrollIndicator></ScrollIndicator>
       </div>
     </div>
 
