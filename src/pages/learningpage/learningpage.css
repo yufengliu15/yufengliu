@@ -1,3 +1,5 @@
 .learningpage-body {
     margin: 5%;
+    height: 67.8vh;
+    overflow: auto;
 }

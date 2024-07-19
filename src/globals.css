@@ -8,6 +8,21 @@
     background-color: #F5f589;
 }
 
+@media (min-width: 801px){
+    .body{
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 800px){
+    .body{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .background::before {
     content: "";
     position: fixed;
@@ -17,7 +32,6 @@
     bottom: 0;
     background-image: radial-gradient(circle at 2px 2px, black 1px, transparent 0);
     background-size: 25px 25px;
-    /* height: 120%; Add this line */
 }
 
 hr {

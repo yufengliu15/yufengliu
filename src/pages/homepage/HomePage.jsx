@@ -36,43 +36,47 @@ function HomePage() {
                 <hr></hr>
                 <div className='text-area'>
                     <div className='header'>
-                        <u>What am I working on right now?</u>
+                        <u>What am I doing right now?</u>
                     </div>
 
                     <ul>
                         <li>PapersWithKindle</li>
                         <li>Linear Algebra</li>
                         <li>Reading Research Papers</li>
+                        <li>Learning Japanese</li>
                     </ul>
                 </div>
 
-                <div className="text-area">
-                    <div className="header">
-                        <u>Contact Me</u>
+                <div className='footer'>
+                    <div className="text-area">
+                        <div className="header">
+                            <u>Contact Me</u>
+                        </div>
+                        Get in touch with me at <b>yufeng.liu15@gmail.com</b>, or click on one of the links below:
+                        <div className="media-links">
+                            <a href='https://x.com/yufeng_liu15' target="_blank" rel="noreferrer"><b>Twitter</b><img src={Link} width={linkSize} height={linkSize}></img></a> / <a href='https://github.com/yufengliu15' target="_blank" rel="noreferrer"><b>Github</b><img src={Link} width={linkSize} height={linkSize}></img></a> / <a href='https://www.linkedin.com/in/liuyuf/' target="_blank" rel="noreferrer"><b>LinkedIn</b><img src={Link} width={linkSize} height={linkSize}></img></a>
+                        </div>
                     </div>
-                    Get in touch with me at <b>yufeng.liu15@gmail.com</b>, or click on one of the links below:
-                    <div className="media-links">
-                        <a href='https://x.com/yufeng_liu15' target="_blank" rel="noreferrer"><b>Twitter</b><img src={Link} width={linkSize} height={linkSize}></img></a> / <a href='https://github.com/yufengliu15' target="_blank" rel="noreferrer"><b>Github</b><img src={Link} width={linkSize} height={linkSize}></img></a> / <a href='https://www.linkedin.com/in/liuyuf/' target="_blank" rel="noreferrer"><b>LinkedIn</b><img src={Link} width={linkSize} height={linkSize}></img></a>
+
+                    <div className="text-area">
+                        <div className="header">
+                            <u>About the Website</u>
+                        </div>
+
+                        Website was <b>built and designed by me</b>. Pictures are also all taken by me.
+                        <br></br>
+                        <br></br>
+                        Like the <a href="https://typeof.net/Iosevka/" target="_blank" rel="noreferrer"> <b>font<img src={Link} width={linkSize} height={linkSize}></img></b></a>?
+                        <br></br>
+                        <br></br>
+                        Website last edited: {lastModifiedWebsiteDate}
                     </div>
+                    <br></br>
+                    <br></br>
+
+                    <Logo></Logo>
                 </div>
 
-                <div className="text-area">
-                    <div className="header">
-                        <u>About the Website</u>
-                    </div>
-
-                    Website was <b>built and designed by me</b>. Pictures are also all taken by me.
-                    <br></br>
-                    <br></br>
-                    Like the <a href="https://typeof.net/Iosevka/" target="_blank" rel="noreferrer"> <b>font<img src={Link} width={linkSize} height={linkSize}></img></b></a>?
-                    <br></br>
-                    <br></br>
-                    Website last edited: {lastModifiedWebsiteDate}
-                </div>
-                <br></br>
-                <br></br>
-
-                <Logo></Logo>
             </div>
         </div>
 

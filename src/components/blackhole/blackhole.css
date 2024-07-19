@@ -1,5 +1,5 @@
 .blackhole {
-    position: absolute;
+    position: fixed;
     z-index: -1;
     scale: 2.5;
 }

@@ -4,6 +4,11 @@
     margin-bottom: 0;
 }
 
+.homepage {
+    height: 85vh;
+    overflow: auto;
+}
+
 .header {
     padding: 2px;
 }
