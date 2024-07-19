@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 import { HomePage, LearningPage, GalleryPage } from './pages';
-import { Navbar, Post } from "./components"
+import { Blackhole, Navbar, Post } from "./components"
 
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
@@ -12,6 +12,7 @@ import "./globals.css"
 export default function App() {
     return (
         <div className='background'>
+            <Blackhole></Blackhole>
             <div className='body'>
                 <Navbar></Navbar>
                 <hr></hr>
