@@ -1,15 +1,3 @@
-.navbar-menu {
-    display: flex;
-    list-style-type: none;
-    gap: 10%;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 15px;
-}
-
-.navbar-menu li a{
-    text-decoration: none;
-    color: black;
+.navbar{
+    margin: 2%;
 }

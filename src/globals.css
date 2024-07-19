@@ -1,6 +1,7 @@
 .body {
     margin-left: 20%;
     margin-right: 20%;
+    margin-top: 2%;
     border-style: solid;
     opacity: 0.95;
     z-index: 999;
@@ -34,4 +35,13 @@ hr {
 
 .route-enter {
     animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    filter: brightness(.9);
 }

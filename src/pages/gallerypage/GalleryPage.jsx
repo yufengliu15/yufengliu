@@ -135,9 +135,10 @@ function GalleryPage() {
       <div className='gallerypage-body'>
         <h1>Gallery</h1>
         <hr></hr>
-        <p>I have only recently started to indulge in the art of photography. So, here is all the photos that I am proud of.</p>
+        <p>Though I am just beginning my journey in photography, the allure of immortalizing the beauty of fleeting moments fuels my passion to persist.</p> 
+        <p> So, here are all the photos that I am proud of.</p>
         <p>Camera: Olympus E-PL6</p>
-        <p>Lens: Olympus E-PL6 14-42mm</p>
+        <p>Lens: Olympus E-PL6 Kit Lens 14-42mm</p>
         <br></br>
         <b><span id="images-count">{images ? Math.max(images.length - 1, 0) : 0}</span></b> imported pictures from Google Drive
         <div id="images-container">

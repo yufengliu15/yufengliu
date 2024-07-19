@@ -22,10 +22,10 @@ function HomePage() {
                 </div>
                 <div className="text-area">
                     <div className="header">
-                        <u>About Me</u>
+                        <u>Heyo!</u>
                     </div>
 
-                    I am a third year <b>Honours Computer Science </b> student at Carleton University located in Ottawa, Ontario.
+                    I'm Yufeng, a third year <b>Honours Computer Science </b> student at Carleton University located in Ottawa, Ontario.
                     A lot of things interest me, ranging from programming, AI and robotics, to Formula 1, playing music and travelling.
                     <br></br>
                     <br></br>
@@ -52,7 +52,7 @@ function HomePage() {
                     </div>
                     Get in touch with me at <b>yufeng.liu15@gmail.com</b>, or click on one of the links below:
                     <div className="media-links">
-                        <a href='https://x.com/yufeng_liu15' target="_blank" rel="noreferrer">Twitter<img src={Link} width={linkSize} height={linkSize}></img></a> / <a href='https://github.com/yufengliu15' target="_blank" rel="noreferrer">Github<img src={Link} width={linkSize} height={linkSize}></img></a> / <a href='https://www.linkedin.com/in/liuyuf/' target="_blank" rel="noreferrer">LinkedIn<img src={Link} width={linkSize} height={linkSize}></img></a>
+                        <a href='https://x.com/yufeng_liu15' target="_blank" rel="noreferrer"><b>Twitter</b><img src={Link} width={linkSize} height={linkSize}></img></a> / <a href='https://github.com/yufengliu15' target="_blank" rel="noreferrer"><b>Github</b><img src={Link} width={linkSize} height={linkSize}></img></a> / <a href='https://www.linkedin.com/in/liuyuf/' target="_blank" rel="noreferrer"><b>LinkedIn</b><img src={Link} width={linkSize} height={linkSize}></img></a>
                     </div>
                 </div>
 

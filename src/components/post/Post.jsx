@@ -2,7 +2,8 @@ import React from 'react'
 import { useParams, Navigate } from 'react-router-dom';
 import "./post.css"
 import postsList from "../../posts.json"
-import { Navbar, Logo } from "../"
+import { Logo } from "../"
+import useAnimateRoute from '../../hooks/useAnimatedRoute';
 
 // Markdown styling imports
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
@@ -16,6 +17,7 @@ import 'katex/dist/katex.min.css'
 
 const Post = () => {
     const { title } = useParams();
+    const animationClass = useAnimateRoute()
     var post = null;
 
     for (var i in postsList) {
@@ -37,7 +39,7 @@ const Post = () => {
     };
 
     return (
-        <div>
+        <div className={animationClass}>
             <div className="markdown-body">
                 <h1 className="title">{post.user_title}</h1>
                 Published on {post.published} {(post.updated !== null) ? '| Updated on ' + post.updated : ''}

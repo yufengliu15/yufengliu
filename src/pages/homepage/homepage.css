@@ -8,18 +8,13 @@
     padding: 2px;
 }
 
-u {
+div.homepage u {
     font-size: 130%;
 }
 
 .media-links{
     padding-top: 10px;
     text-align: center;
-}
-
-a{
-    text-decoration: none;
-    color: black;
 }
 
 img{

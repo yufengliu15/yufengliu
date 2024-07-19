@@ -3,15 +3,12 @@ import './navbar.css'
 
 const Navbar = () => {
   return (
-    <nav className="sticky">
       <div className='navbar'>
-        <ul className='navbar-menu'>
-          <li><a href="/">home</a></li>
-          <li><a href="/blog">blog</a></li>
-          <li><a href="gallery">gallery</a></li>
-        </ul>
+        yufengliu.tech |
+        <a href="/"> <b>home</b> </a>
+        <a href="blog"> <b>blog</b> </a>
+        <a href="gallery"> <b>gallery</b> </a>
       </div>
-    </nav>
   )
 }
 

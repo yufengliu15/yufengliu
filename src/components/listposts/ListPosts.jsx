@@ -1,11 +1,10 @@
 import React from 'react'
 import "./listposts.css"
-import { Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function ListPosts({ posts }) {
     return (
         <div>
-            <br></br>
             <br></br>
             <div className='postlisting'>
                 {posts.length &&
