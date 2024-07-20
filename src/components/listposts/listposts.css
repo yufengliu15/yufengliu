@@ -1,19 +1,15 @@
-.postlisting {
-    position: relative;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 10%;
-    margin-top: -1%;
-
+.postcard-holder {
+    padding-bottom: 0px;
 }
 
-.postcard-holder {
-    padding-bottom: 30px;
+h2 {
+    margin-bottom: -10px;
+    font-size: larger;
 }
 
 .postcard {
     border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 0% 2%;
     background-color: rgba(227, 54, 255, 0.5);
 }

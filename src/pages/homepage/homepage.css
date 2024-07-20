@@ -4,22 +4,23 @@
     margin-bottom: 0;
 }
 
+.homepage{
+    position: relative;
+    height: 86vh;
+    
+}
+
 .header {
     padding: 2px;
 }
 
-u {
-    font-size: 40px;
+div.homepage u {
+    font-size: 130%;
 }
 
 .media-links{
     padding-top: 10px;
     text-align: center;
-}
-
-a{
-    text-decoration: none;
-    color: black;
 }
 
 img{

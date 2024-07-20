@@ -1,13 +1,18 @@
 .markdown-body {
     position: relative;
-    /* margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%; */
+    top: 0px;
+    bottom: 50px;
     padding: 100px;
     padding-top: 30px;
-    border-radius: 10px;
     background-color: rgba(33, 36, 48, 1);
     color: white;
+    overflow: auto;
+}
+
+@media (max-width: 1000px){
+    .markdown-body {
+        padding: 15px;
+    }
 }
 
 .markdown a:any-link {

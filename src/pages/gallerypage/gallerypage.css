@@ -3,10 +3,10 @@
     padding: 3px;
 }
 
-.body{
-    margin: 3%;
+.gallerypage-body{
+    margin: 5%;
+    background-color: #f5f589;
 }
-
 
 /* Frame page */
 
@@ -34,6 +34,7 @@
 .mdl-list__item {
     padding: 0;
     overflow: visible;
+    opacity: 1;
 }
 
 .mdl-list__item--two-line {

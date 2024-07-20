@@ -1,17 +1,18 @@
 import React from 'react'
 
 import './learningpage.css'
-import { Navbar, Logo, ListPosts } from '../../components'
+import { Logo, ListPosts } from '../../components'
 import postList from "../../posts.json"
 
+import useAnimateRoute from '../../hooks/useAnimatedRoute'
+
 function LearningPage() {
+  const animationClass = useAnimateRoute()
   return (
-    <div>
-      <Navbar></Navbar>
-      <div className='body'>
-        <h1>Learnings</h1>
-        Welcome to my learnings page! This is where I share the things that interest me, in a blog style format. This page was made so that blog posts are written in Markdown, then using 'react-markdown' to translate it into JSX.
-        <br></br>
+    <div className={animationClass}>
+      <div className='learningpage-body'>
+        <h1>Blogs</h1>
+        <hr></hr>
         <br></br>
         There are currently <b>{postList.length}</b> post(s).
         <ListPosts posts={postList}></ListPosts>
