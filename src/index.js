@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
 
 import { HomePage, LearningPage, GalleryPage } from './pages';
 import { Navbar, Post } from "./components"
@@ -21,7 +21,7 @@ export default function App() {
                             <Route index element={<HomePage />} />
                             <Route path="blog" element={<LearningPage />} />
                             <Route path="gallery" element={<GalleryPage />} />
-                            <Route path="blog/:title" element={<Post></Post>} />
+                            <Route path="/blog/:title" element={<Post></Post>} />
                             <Route path="*" element={<HomePage />} />
                         </Routes>
                     </BrowserRouter>
