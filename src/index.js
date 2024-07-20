@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
+import { Route, Routes, BrowserRouter} from "react-router-dom";
 
 import { HomePage, LearningPage, GalleryPage } from './pages';
 import { Navbar, Post } from "./components"
