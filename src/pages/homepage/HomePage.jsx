@@ -9,7 +9,7 @@ function HomePage() {
     const animationClass = useAnimateRoute()
 
     // DD/MM/YYYY
-    let lastModifiedWebsiteDate = "19/07/2024";
+    let lastModifiedWebsiteDate = "20/07/2024";
     let lastModifiedResumeDate = "13/06/2024";
 
     const linkSize = "14px";
@@ -17,12 +17,9 @@ function HomePage() {
     return (
         <div className={animationClass}>
             <div className="homepage">
-                <div className='header'>
-
-                </div>
                 <div className="text-area">
                     <div className="header">
-                        <u>Heyo!</u>
+                        <u>Hey!</u>
                     </div>
 
                     I'm Yufeng, a third year <b>Honours Computer Science </b> student at Carleton University located in Ottawa, Ontario.
@@ -38,7 +35,6 @@ function HomePage() {
                     <div className='header'>
                         <u>What am I doing right now?</u>
                     </div>
-
                     <ul>
                         <li>PapersWithKindle</li>
                         <li>Linear Algebra</li>

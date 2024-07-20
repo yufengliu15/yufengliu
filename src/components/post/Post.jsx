@@ -65,7 +65,6 @@ const Post = () => {
                     },
                 }}>{post.content}</Markdown>
             </div>
-            <Logo></Logo>
         </div>
 
     )
