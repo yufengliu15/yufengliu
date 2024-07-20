@@ -6,8 +6,8 @@ const Navbar = () => {
       <div className='navbar'>
         yufengliu.tech |
         <a href="/"> <b>home</b> </a>
-        <a href="blog"> <b>blog</b> </a>
-        <a href="gallery"> <b>gallery</b> </a>
+        <a href="/blog"> <b>blog</b> </a>
+        <a href="/gallery"> <b>gallery</b> </a>
       </div>
   )
 }
