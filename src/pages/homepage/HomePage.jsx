@@ -9,8 +9,8 @@ function HomePage() {
     const animationClass = useAnimateRoute()
 
     // DD/MM/YYYY
-    let lastModifiedWebsiteDate = "20/07/2024";
-    let lastModifiedResumeDate = "13/06/2024";
+    let lastModifiedWebsiteDate = "17/09/2024";
+    let lastModifiedResumeDate = "17/09/2024";
 
     const linkSize = "14px";
 
@@ -36,9 +36,9 @@ function HomePage() {
                         <u>What am I doing right now?</u>
                     </div>
                     <ul>
-                        <li>PapersWithKindle</li>
-                        <li>Linear Algebra</li>
-                        <li>Reading Research Papers</li>
+                        <li>SWE Internship</li>
+                        <li>Kaggle Competitions</li>
+                        <li>Reading AI/ML Research Papers</li>
                         <li>Learning Japanese</li>
                     </ul>
                 </div>
