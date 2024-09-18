@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.7c1845ca.css",
-    "main.js": "/static/js/main.837019eb.js",
-    "static/media/Yufeng_Liu_Resume.pdf": "/static/media/Yufeng_Liu_Resume.d543bbef40822bd43eef.pdf",
+    "main.js": "/static/js/main.d89f38e4.js",
+    "static/media/Yufeng_Liu_Resume.pdf": "/static/media/Yufeng_Liu_Resume.23d9173b1fc118eccb33.pdf",
     "static/media/logo.webp": "/static/media/logo.05a8f259db39b0959d5a.webp",
     "static/media/KaTeX_AMS-Regular.ttf": "/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -66,10 +66,10 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/index.html",
     "main.7c1845ca.css.map": "/static/css/main.7c1845ca.css.map",
-    "main.837019eb.js.map": "/static/js/main.837019eb.js.map"
+    "main.d89f38e4.js.map": "/static/js/main.d89f38e4.js.map"
   },
   "entrypoints": [
     "static/css/main.7c1845ca.css",
-    "static/js/main.837019eb.js"
+    "static/js/main.d89f38e4.js"
   ]
 }
