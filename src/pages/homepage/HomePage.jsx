@@ -9,7 +9,7 @@ function HomePage() {
     const animationClass = useAnimateRoute()
 
     // DD/MM/YYYY
-    let lastModifiedWebsiteDate = "17/09/2024";
+    let lastModifiedWebsiteDate = "06/02/2025";
     let lastModifiedResumeDate = "17/09/2024";
 
     const linkSize = "14px";
@@ -36,10 +36,9 @@ function HomePage() {
                         <u>What am I doing right now?</u>
                     </div>
                     <ul>
-                        <li>SWE Internship</li>
-                        <li>Kaggle Competitions</li>
-                        <li>Reading AI/ML Research Papers</li>
+                        <li>Implementing AI/ML Research Papers</li>
                         <li>Learning Japanese</li>
+                        <li>Building a DIY drone</li>
                     </ul>
                 </div>
 
@@ -63,6 +62,9 @@ function HomePage() {
                         <br></br>
                         <br></br>
                         Like the <a href="https://typeof.net/Iosevka/" target="_blank" rel="noreferrer"> <b>font<img src={Link} width={linkSize} height={linkSize}></img></b></a>?
+                        <br></br>
+                        <br></br>
+                        Check out other Carleton University students websites <a href='https://cu-webring.org/' target="_blank" rel="noreferrer"><b>here</b><img src={Link} width={linkSize} height={linkSize}></img></a>! 
                         <br></br>
                         <br></br>
                         Website last edited: {lastModifiedWebsiteDate}

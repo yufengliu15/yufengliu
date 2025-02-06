@@ -2,7 +2,6 @@ import React from 'react'
 import { useParams, Navigate } from 'react-router-dom';
 import "./post.css"
 import postsList from "../../posts.json"
-import { Logo } from "../"
 import useAnimateRoute from '../../hooks/useAnimatedRoute';
 
 // Markdown styling imports

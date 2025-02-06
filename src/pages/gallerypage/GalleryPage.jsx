@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import useAnimateRoute from '../../hooks/useAnimatedRoute';
 import './gallerypage.css'
-import { Navbar, Logo } from '../../components'
+import { Logo } from '../../components'
 import { KJUR } from 'jsrsasign';
 // npm install --save gapi-script
 import { privateData } from '../../config';
