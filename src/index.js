@@ -19,9 +19,10 @@ export default function App() {
                     <BrowserRouter>
                         <Routes>
                             <Route index element={<HomePage />} />
-                            <Route path="blog" element={<LearningPage />} />
+                            {/* <Route path="blog" element={<LearningPage />} /> */}
+                            {/* <Route path="/blog/:title" element={<Post></Post>} /> */}
                             <Route path="gallery" element={<GalleryPage />} />
-                            <Route path="/blog/:title" element={<Post></Post>} />
+                            <Route path="project" element={<ProjectPage/>}/>
                             <Route path="*" element={<HomePage />} />
                         </Routes>
                     </BrowserRouter>
