@@ -1,0 +1,20 @@
+[
+  {
+    "id": "project1",
+    "title": "AI Research Implementation",
+    "description": "Implementation of various AI research papers and experiments",
+    "technologies": ["Python", "PyTorch", "Machine Learning"],
+    "image": "cuwebring.jpg",
+    "link": "https://github.com/yufengliu15/ai-research",
+    "date": "2024"
+  },
+  {
+    "id": "project2",
+    "title": "DIY Drone Project",
+    "description": "Building a custom drone from scratch with autonomous capabilities",
+    "technologies": ["Arduino", "C++", "Electronics"],
+    "image": "drone.png",
+    "link": "https://github.com/yufengliu15/drone-project",
+    "date": "2024"
+  }
+] 
