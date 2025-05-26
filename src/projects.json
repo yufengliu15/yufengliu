@@ -1,20 +1,65 @@
 [
   {
     "id": "project1",
-    "title": "AI Research Implementation",
-    "description": "Implementation of various AI research papers and experiments",
-    "technologies": ["Python", "PyTorch", "Machine Learning"],
+    "title": "cuwebring.org",
+    "description": "A place for Carleton University students to share their websites. Currently has 10+ students using it.",
+    "technologies": ["Javascript", "CSS", "CI/CD"],
     "image": "cuwebring.jpg",
-    "link": "https://github.com/yufengliu15/ai-research",
-    "date": "2024"
+    "link": "https://github.com/yufengliu15/cu-webring",
+    "date": "2025"
   },
   {
     "id": "project2",
-    "title": "DIY Drone Project",
-    "description": "Building a custom drone from scratch with autonomous capabilities",
-    "technologies": ["Arduino", "C++", "Electronics"],
-    "image": "drone.png",
-    "link": "https://github.com/yufengliu15/drone-project",
-    "date": "2024"
-  }
+    "title": "Timer",
+    "description": "This Discord bot allows users to create, join, and manage shared timers within a server. Built and self deployed in 2 days.",
+    "technologies": ["Python", "Discord API"],
+    "image": "timer_pfp.jpg",
+    "link": "https://github.com/yufengliu15/Timer",
+    "date": "2025"
+  },
+  {
+    "id": "project3",
+    "title": "ML Paper Implementations",
+    "description": "Implementing fundamental machine learning algorithms from scratch. (Still in progress)",
+    "technologies": ["Python", "TensorFlow", "PyTorch", "numPy"],
+    "image": "ml-papers.webp",
+    "link": "https://github.com/yufengliu15/ml-paper-implementations",
+    "date": "2025"
+  },
+  {
+    "id": "project4",
+    "title": "Rambo the QNX Roomba",
+    "description": "A Raspberry Pi 4B running QNX controls a Roomba vacuum cleaner equipped with an Arduino and four photoresistors for light-based navigation.",
+    "technologies": ["C", "QNX", "Arduino", "Embedded"],
+    "image": "roomba.webp",
+    "link": "https://github.com/bskdany/uOttaHack7",
+    "date": "2025"
+},
+{
+  "id": "project5",
+  "title": "Black Scholes Model",
+  "description": "Replicated the Black Scholes Model in Python. Deployed using streamlit.",
+  "technologies": ["Python", "Streamlit"],
+  "image": "black-scholes.jpg",
+  "link": "https://github.com/yufengliu15/black-scholes-model",
+  "date": "2025"
+},
+{
+  "id": "project6",
+  "title": "FoodBank AI",
+  "description": "A webapp that utilizes computer vision (ResNet) that was finetuned to detect food items from the webcam.",
+  "technologies": ["Python", "Flask", "Computer Vision"],
+  "image": "foodbankai.jpg",
+  "link": "https://github.com/isharghura/FoodBank-AI",
+  "date": "2024"
+},
+{
+  "id": "project7",
+  "title": "Anki Guitar Fretboard",
+  "description": "Created a custom Anki deck for learning guitar fretboard. Has over 450 downloads with positive reviews.",
+  "technologies": ["Python", "Anki"],
+  "image": "Anki-icon.png",
+  "link": "https://github.com/yufengliu15/anki-guitar-fretboard",
+  "date": "2024"
+}
 ] 

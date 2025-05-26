@@ -9,7 +9,7 @@ function HomePage() {
     const animationClass = useAnimateRoute()
 
     // DD/MM/YYYY
-    let lastModifiedWebsiteDate = "06/02/2025";
+    let lastModifiedWebsiteDate = "25/05/2025";
     let lastModifiedResumeDate = "17/09/2024";
 
     const linkSize = "14px";
@@ -38,7 +38,8 @@ function HomePage() {
                     <ul>
                         <li>Implementing AI/ML Research Papers</li>
                         <li>Learning Japanese</li>
-                        <li>Building a DIY drone</li>
+                        <li>Building robots</li>
+                        <li>Sketching landscapes</li>
                     </ul>
                 </div>
 

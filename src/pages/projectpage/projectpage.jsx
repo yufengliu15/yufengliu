@@ -14,7 +14,7 @@ function ProjectPage() {
         <h1>Projects</h1>
         <hr></hr>
         <br></br>
-        <p>Here are some of the projects I've worked on. Each project represents a unique challenge and learning experience.</p>
+        <p>I <s>try</s> like to build things. Here's some examples, in order from newest to oldest.</p>
         <br></br>
         There are currently <b>{projectsList.length}</b> project(s).
         <ProjectGrid projects={projectsList} />

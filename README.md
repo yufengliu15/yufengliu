@@ -22,7 +22,7 @@ To deploy to gh-pages branch: `npm run deploy`
     "image": "",
     "link": "",
     "date": ""
-},
+}
 ```
 For image, make sure to add to `src/assets/images`. The `image` value can just be the name of the image. 
 
