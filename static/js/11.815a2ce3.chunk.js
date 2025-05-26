@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyufengliu=self.webpackChunkyufengliu||[]).push([[11],{11:(e,a,u)=>{e.exports=u.p+"static/media/foodbankai.43c1b15a844b704a0845.jpg"}}]);

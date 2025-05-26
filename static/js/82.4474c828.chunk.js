@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyufengliu=self.webpackChunkyufengliu||[]).push([[82],{82:(e,u,a)=>{e.exports=a.p+"static/media/Anki-icon.86db8660edc8aaf3ea25.png"}}]);
