@@ -1,0 +1,15 @@
+.projectpage-body {
+    margin: 5%;
+    margin-top: 3%;
+    height: 70vh;
+    overflow: auto;
+}
+
+.projectpage-body h1 {
+    margin-bottom: 1rem;
+}
+
+.projectpage-body p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}

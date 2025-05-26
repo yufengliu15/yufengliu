@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Route, Routes, BrowserRouter} from "react-router-dom";
 
-import { HomePage, LearningPage, GalleryPage } from './pages';
+import { HomePage, LearningPage, GalleryPage, ProjectPage } from './pages';
 import { Navbar, Post } from "./components"
 
 import "./globals.css"
@@ -19,9 +19,10 @@ export default function App() {
                     <BrowserRouter>
                         <Routes>
                             <Route index element={<HomePage />} />
-                            <Route path="blog" element={<LearningPage />} />
+                            {/* <Route path="blog" element={<LearningPage />} /> */}
+                            {/* <Route path="/blog/:title" element={<Post></Post>} /> */}
                             <Route path="gallery" element={<GalleryPage />} />
-                            <Route path="/blog/:title" element={<Post></Post>} />
+                            <Route path="projects" element={<ProjectPage/>}/>
                             <Route path="*" element={<HomePage />} />
                         </Routes>
                     </BrowserRouter>
