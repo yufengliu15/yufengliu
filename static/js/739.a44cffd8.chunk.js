@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyufengliu=self.webpackChunkyufengliu||[]).push([[739],{739:(e,u,f)=>{e.exports=f.p+"static/media/cuwebring.9de1f560a7ff4d3bfd78.jpg"}}]);
