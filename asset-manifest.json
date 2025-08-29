@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.09b591fe.css",
-    "main.js": "/static/js/main.eefa64f5.js",
+    "main.css": "/static/css/main.f832c729.css",
+    "main.js": "/static/js/main.faa85146.js",
     "static/js/82.4474c828.chunk.js": "/static/js/82.4474c828.chunk.js",
     "static/js/982.9ad34707.chunk.js": "/static/js/982.9ad34707.chunk.js",
     "static/js/739.a44cffd8.chunk.js": "/static/js/739.a44cffd8.chunk.js",
@@ -14,7 +14,7 @@
     "static/media/black-scholes.jpg": "/static/media/black-scholes.e63b93283e839adc1e9a.jpg",
     "static/media/cuwebring.jpg": "/static/media/cuwebring.9de1f560a7ff4d3bfd78.jpg",
     "static/media/foodbankai.jpg": "/static/media/foodbankai.43c1b15a844b704a0845.jpg",
-    "static/media/Yufeng_Liu_Resume.pdf": "/static/media/Yufeng_Liu_Resume.23d9173b1fc118eccb33.pdf",
+    "static/media/Yufeng_Liu_Resume.pdf": "/static/media/Yufeng_Liu_Resume.9e1ecb809e95dbb7d2aa.pdf",
     "static/media/logo.webp": "/static/media/logo.05a8f259db39b0959d5a.webp",
     "static/media/roomba.webp": "/static/media/roomba.5f956a6f63d55b1635a2.webp",
     "static/media/Anki-icon.png": "/static/media/Anki-icon.86db8660edc8aaf3ea25.png",
@@ -79,11 +79,11 @@
     "static/media/KaTeX_Size3-Regular.woff": "/static/media/KaTeX_Size3-Regular.7947224e8a9914fa332b.woff",
     "static/media/KaTeX_Size3-Regular.woff2": "/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/index.html",
-    "main.09b591fe.css.map": "/static/css/main.09b591fe.css.map",
-    "main.eefa64f5.js.map": "/static/js/main.eefa64f5.js.map"
+    "main.f832c729.css.map": "/static/css/main.f832c729.css.map",
+    "main.faa85146.js.map": "/static/js/main.faa85146.js.map"
   },
   "entrypoints": [
-    "static/css/main.09b591fe.css",
-    "static/js/main.eefa64f5.js"
+    "static/css/main.f832c729.css",
+    "static/js/main.faa85146.js"
   ]
 }
