@@ -1,8 +1,9 @@
 .projectpage-body {
-    margin: 5%;
+    margin: 5% 3% 0% 5%;
     margin-top: 3%;
-    height: 70vh;
+    height: 80vh;
     overflow: auto;
+    padding-right: 2%;
 }
 
 .projectpage-body h1 {
