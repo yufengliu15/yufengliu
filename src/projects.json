@@ -1,5 +1,23 @@
 [
   {
+    "id": "project9",
+    "title": "LCD IP Address Displayer",
+    "description": "LCD circuit that displays the IP Address of a host system, allowing for an easy ssh into a headless device.",
+    "technologies": ["Bash", "Python", "Soldering", "Fusion 360"],
+    "image": "lcdipaddress.jpeg",
+    "link": "https://github.com/yufengliu15/lcdipaddress",
+    "date": "2025"
+  },
+  {
+    "id": "project8",
+    "title": "DIY Filament Dry Box",
+    "description": "3D modelled a filament dry box that works with Bambu Lab AMS Lite, holding up to 4 spools.",
+    "technologies": ["Fusion 360", "3D Modeling"],
+    "image": "filamentdrybox.jpeg",
+    "link": "https://github.com/yufengliu15/Filament-Dry-Box",
+    "date": "2025"
+  },
+  {
     "id": "project1",
     "title": "cuwebring.org",
     "description": "A place for Carleton University students to share their websites. Currently has 10+ students using it.",

@@ -9,7 +9,7 @@ function HomePage() {
     const animationClass = useAnimateRoute()
 
     // DD/MM/YYYY
-    let lastModifiedWebsiteDate = "28/08/2025";
+    let lastModifiedWebsiteDate = "04/11/2025";
     let lastModifiedResumeDate = "28/08/2025";
 
     const linkSize = "14px";
