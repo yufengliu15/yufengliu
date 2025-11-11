@@ -1,5 +1,14 @@
 [
   {
+    "id": "project10",
+    "title": "Copper Dome",
+    "description": "Arm mounted rocket launcher made out of cardboard. Utilizes 2 servos and a joystick for precise aiming, allowing for counter measures of possible missile strikes towards the user.",
+    "technologies": ["Electrical", "Hopes and Dreams"],
+    "image": "copper_dome.jpeg",
+    "link": "https://www.youtube.com/shorts/t1lcQIdJ1OM",
+    "date": "2025"
+  },
+  {
     "id": "project9",
     "title": "LCD IP Address Displayer",
     "description": "LCD circuit that displays the IP Address of a host system, allowing for an easy ssh into a headless device.",
