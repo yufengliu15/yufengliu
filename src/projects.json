@@ -27,15 +27,6 @@
     "date": "2025"
   },
   {
-    "id": "project1",
-    "title": "cuwebring.org",
-    "description": "A place for Carleton University students to share their websites. Currently has 10+ students using it.",
-    "technologies": ["Javascript", "CSS", "CI/CD"],
-    "image": "cuwebring.jpg",
-    "link": "https://github.com/yufengliu15/cu-webring",
-    "date": "2025"
-  },
-  {
     "id": "project2",
     "title": "Timer",
     "description": "This Discord bot allows users to create, join, and manage shared timers within a server. Built and self deployed in 2 days.",
@@ -47,10 +38,19 @@
   {
     "id": "project11",
     "title": "Montreal Bike Trip",
-    "description": "Randomly decided to bike to Montreal with Kahan Desai while having no prior cycling experience at all. 190 kms cycled in 18 hours.",
+    "description": "Randomly decided to bike to Montreal from Ottawa with Kahan Desai while having no prior cycling experience at all. ~190 kms cycled in 18 hours.",
     "technologies": [],
     "image": "mtl-bike.jpg",
     "link": "https://youtu.be/wEhIWf2zh-I",
+    "date": "2025"
+  },
+  {
+    "id": "project1",
+    "title": "cuwebring.org",
+    "description": "A place for Carleton University students to share their websites. Currently has 10+ students using it.",
+    "technologies": ["Javascript", "CSS", "CI/CD"],
+    "image": "cuwebring.jpg",
+    "link": "https://github.com/yufengliu15/cu-webring",
     "date": "2025"
   },
   {
