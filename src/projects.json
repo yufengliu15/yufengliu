@@ -45,6 +45,15 @@
     "date": "2025"
   },
   {
+    "id": "project11",
+    "title": "Montreal Bike Trip",
+    "description": "Randomly decided to bike to Montreal with Kahan Desai while having no prior cycling experience at all. 190 kms cycled in 18 hours.",
+    "technologies": [],
+    "image": "mtl-bike.jpg",
+    "link": "https://youtu.be/wEhIWf2zh-I",
+    "date": "2025"
+  },
+  {
     "id": "project3",
     "title": "ML Paper Implementations",
     "description": "Implementing fundamental machine learning algorithms from scratch. (Still in progress)",
