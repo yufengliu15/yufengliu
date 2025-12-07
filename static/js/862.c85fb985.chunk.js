@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyufengliu=self.webpackChunkyufengliu||[]).push([[862],{862:(e,u,s)=>{e.exports=s.p+"static/media/mtl-bike.237bb855bee7cc5ae231.jpg"}}]);

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f832c729.css",
-    "main.js": "/static/js/main.04390797.js",
+    "main.js": "/static/js/main.606ea2e0.js",
     "static/js/82.4474c828.chunk.js": "/static/js/82.4474c828.chunk.js",
     "static/js/982.9ad34707.chunk.js": "/static/js/982.9ad34707.chunk.js",
     "static/js/745.402860c7.chunk.js": "/static/js/745.402860c7.chunk.js",
@@ -10,8 +10,10 @@
     "static/js/11.815a2ce3.chunk.js": "/static/js/11.815a2ce3.chunk.js",
     "static/js/386.d6aeee6d.chunk.js": "/static/js/386.d6aeee6d.chunk.js",
     "static/js/980.714bca71.chunk.js": "/static/js/980.714bca71.chunk.js",
+    "static/js/862.c85fb985.chunk.js": "/static/js/862.c85fb985.chunk.js",
     "static/js/971.bbb8cd2f.chunk.js": "/static/js/971.bbb8cd2f.chunk.js",
     "static/js/803.a535572e.chunk.js": "/static/js/803.a535572e.chunk.js",
+    "static/media/mtl-bike.jpg": "/static/media/mtl-bike.237bb855bee7cc5ae231.jpg",
     "static/media/ml-papers.webp": "/static/media/ml-papers.4a3f4665e4b7a8a78cde.webp",
     "static/media/timer_pfp.jpg": "/static/media/timer_pfp.6e87bd2df261fd19e850.jpg",
     "static/media/black-scholes.jpg": "/static/media/black-scholes.e63b93283e839adc1e9a.jpg",
@@ -86,10 +88,10 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/index.html",
     "main.f832c729.css.map": "/static/css/main.f832c729.css.map",
-    "main.04390797.js.map": "/static/js/main.04390797.js.map"
+    "main.606ea2e0.js.map": "/static/js/main.606ea2e0.js.map"
   },
   "entrypoints": [
     "static/css/main.f832c729.css",
-    "static/js/main.04390797.js"
+    "static/js/main.606ea2e0.js"
   ]
 }
