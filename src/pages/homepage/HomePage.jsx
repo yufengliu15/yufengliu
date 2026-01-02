@@ -10,7 +10,7 @@ function HomePage() {
 
     // DD/MM/YYYY
     let lastModifiedWebsiteDate = "11/11/2025";
-    let lastModifiedResumeDate = "28/08/2025";
+    let lastModifiedResumeDate = "01/01/2026";
 
     const linkSize = "14px";
 
