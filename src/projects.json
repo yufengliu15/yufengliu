@@ -54,15 +54,6 @@
     "date": "2025"
 },
 {
-  "id": "project5",
-  "title": "Black Scholes Model",
-  "description": "Replicated the Black Scholes Model in Python. Deployed using streamlit.",
-  "technologies": ["Python", "Streamlit"],
-  "image": "black-scholes.jpg",
-  "link": "https://github.com/yufengliu15/black-scholes-model",
-  "date": "2025"
-},
-{
   "id": "project6",
   "title": "FoodBank AI",
   "description": "A webapp that utilizes computer vision (ResNet) that was finetuned to detect food items from the webcam.",

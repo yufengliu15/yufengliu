@@ -15,7 +15,7 @@ function ProjectCard({ project }) {
   }, [project.image])
 
   return (
-    <div className="project-card">
+    <a className="project-card" href={project.link} target="_blank" rel="noopener noreferrer">
       <div className="project-image">
         {imageSrc ? (
           <img src={imageSrc} alt={project.title} />
@@ -25,22 +25,19 @@ function ProjectCard({ project }) {
           </div>
         )}
       </div>
-      <div className="project-content">
-        <h2>{project.title}</h2>
-        <p className="project-description">{project.description}</p>
-        <div className="project-technologies">
-          {project.technologies.map((tech, index) => (
-            <span key={index} className="tech-tag">{tech}</span>
-          ))}
-        </div>
-        <div className="project-footer">
-          <span className="project-date">{project.date}</span>
-          <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-            View Project →
-          </a>
+      <div className="project-overlay">
+        <div className="project-overlay-inner">
+          <h2 className="project-title">{project.title}</h2>
+          <p className="project-description">{project.description}</p>
+          <div className="project-technologies">
+            {project.technologies.map((tech, index) => (
+              <span key={index} className="tech-tag">{tech}</span>
+            ))}
+          </div>
+          <span className="project-view">View <span aria-hidden="true">↗</span></span>
         </div>
       </div>
-    </div>
+    </a>
   )
 }
 

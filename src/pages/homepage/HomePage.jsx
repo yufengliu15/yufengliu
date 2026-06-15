@@ -9,7 +9,7 @@ function HomePage() {
     const animationClass = useAnimateRoute()
 
     // DD/MM/YYYY
-    let lastModifiedWebsiteDate = "14/06/2026";
+    let lastModifiedWebsiteDate = "15/06/2026";
     let lastModifiedResumeDate = "01/01/2026";
 
     const linkSize = "14px";
@@ -59,9 +59,6 @@ function HomePage() {
                         </div>
 
                         Website was <b>built and designed by me</b>. Pictures are also all taken by me.
-                        <br></br>
-                        <br></br>
-                        Like the <a href="https://typeof.net/Iosevka/" target="_blank" rel="noreferrer"> <b>font<img src={Link} width={linkSize} height={linkSize}></img></b></a>?
                         <br></br>
                         <br></br>
                         Check out other Carleton University students websites <a href='https://cu-webring.org/' target="_blank" rel="noreferrer"><b>here</b><img src={Link} width={linkSize} height={linkSize}></img></a>! 

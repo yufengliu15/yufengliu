@@ -56,10 +56,9 @@ function GalleryPage() {
       <div className='gallerypage-body'>
         <h1>Gallery</h1>
         <hr></hr>
-        <p>Though I am just beginning my journey in photography, the allure of immortalizing the beauty of fleeting moments fuels my passion to persist.</p>
-        <p> So, here are all the photos that I am proud of.</p>
-        <p>Camera: Olympus E-PL6</p>
-        <p>Lens: Olympus E-PL6 Kit Lens 14-42mm</p>
+        <p> My attempt at photography. Older photos were taken with an Olympus E-PL6.</p>
+        <p>Current Camera: Sony A6700</p>
+        <p>Lens: Sigma 17-40mm f/1.8</p>
         <br></br>
         <b><span id="images-count">{items.length}</span></b> pictures
         <div id="images-container" ref={containerRef}>

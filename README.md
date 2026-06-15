@@ -1,18 +1,18 @@
 # Personal Website
 
-# Installation
+## Installation
 
 `git clone https://github.com/yufengliu15/yufengliu.git`
 
 Go into directory and run: `npm install`
 
-# Deployment
+## Deployment
 
 To deploy app locally: `npm start`
 
 To deploy to gh-pages branch: `npm run deploy`
 
-# Add posts template
+## Add posts template
 ```json
 {
     "id": "project1",
@@ -26,5 +26,9 @@ To deploy to gh-pages branch: `npm run deploy`
 ```
 For image, make sure to add to `src/assets/images`. The `image` value can just be the name of the image. 
 
-# Generate Blog Post Objects (deprecated)
+## Add gallery photos
+1. Drop the original photos into `src/assets/photosrc`.
+2. Run `npm run photos` to generate web-sized WebP copies and the manifest in `public/gallery`.
+
+## Generate Blog Post Objects (deprecated)
 `npm run server`
