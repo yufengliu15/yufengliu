@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef, useMemo, useLayoutEffect } from 'react'
 import useAnimateRoute from '../../hooks/useAnimatedRoute';
 import './gallerypage.css'
 import { Logo } from '../../components'
@@ -6,11 +6,96 @@ import { KJUR } from 'jsrsasign';
 // npm install --save gapi-script
 import { privateData } from '../../config';
 import { gapi } from 'gapi-script';
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 window.Buffer = window.Buffer || require("buffer").Buffer;
+
+// Justified gallery tuning (Flickr / Google Photos style).
+const ROW_TARGET_HEIGHT = 240; // ideal row height in px before justification
+const LIGHTBOX_WIDTH = 1600;   // full-res width served to the in-page lightbox on click
+const ROW_GAP = 6;             // px gutter between photos, both axes
+const DEFAULT_AR = 1.5;        // assumed aspect ratio until a photo's real one loads
+
+// Greedily pack photos into rows, then scale each full row so it spans the
+// container width exactly (flush left and right). Each photo keeps its aspect
+// ratio, so nothing is cropped. The final partial row is left at the target
+// height instead of being stretched, which avoids a giant trailing row.
+function buildRows(items, arMap, containerWidth) {
+  if (!containerWidth || items.length === 0) return [];
+  const rows = [];
+  let row = [];
+  let arSum = 0;
+  for (const item of items) {
+    const ar = arMap[item.id] || DEFAULT_AR;
+    row.push({ ...item, ar });
+    arSum += ar;
+    const naturalRowWidth = arSum * ROW_TARGET_HEIGHT + (row.length - 1) * ROW_GAP;
+    if (naturalRowWidth >= containerWidth) {
+      const height = (containerWidth - (row.length - 1) * ROW_GAP) / arSum;
+      rows.push({ items: row, height });
+      row = [];
+      arSum = 0;
+    }
+  }
+  if (row.length) {
+    rows.push({ items: row, height: ROW_TARGET_HEIGHT });
+  }
+  return rows;
+}
 
 function GalleryPage() {
   const [images, setImages] = useState([]);
   const animationClass = useAnimateRoute()
+
+  const containerRef = useRef(null);
+  const [containerWidth, setContainerWidth] = useState(0);
+  const [arMap, setArMap] = useState({});
+
+  // Track the container's inner width so rows can justify to it on resize.
+  useLayoutEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const update = () => setContainerWidth(el.clientWidth);
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  // Open a full-resolution in-page lightbox on click. One image at a time, so
+  // it never triggers the bulk-thumbnail throttling that breaks the grid.
+  useEffect(() => {
+    Fancybox.bind('[data-fancybox="gallery"]', {});
+    return () => {
+      Fancybox.unbind('[data-fancybox="gallery"]');
+      Fancybox.close();
+    };
+  }, []);
+
+  // Record each photo's real aspect ratio once it loads, then reflow.
+  const handleImgLoad = (id) => (e) => {
+    const { naturalWidth, naturalHeight } = e.target;
+    if (!naturalWidth || !naturalHeight) return;
+    const ar = naturalWidth / naturalHeight;
+    setArMap((prev) => (prev[id] ? prev : { ...prev, [id]: ar }));
+  };
+
+  const photoItems = useMemo(
+    () =>
+      (images || [])
+        .filter((it) => it.mimeType === 'image/jpeg' || it.mimeType === 'image/heif')
+        .map((it) => ({
+          id: it.id,
+          thumbnailUrl: `https://drive.google.com/thumbnail?id=${it.id}`,
+          lightboxUrl: `https://drive.google.com/thumbnail?id=${it.id}&sz=w${LIGHTBOX_WIDTH}`,
+        })),
+    [images]
+  );
+
+  const rows = useMemo(
+    () => buildRows(photoItems, arMap, containerWidth),
+    [photoItems, arMap, containerWidth]
+  );
 
   const scope = 'https://www.googleapis.com/auth/drive.readonly    https://www.googleapis.com/auth/drive.metadata.readonly';
 
@@ -141,20 +226,32 @@ function GalleryPage() {
         <p>Lens: Olympus E-PL6 Kit Lens 14-42mm</p>
         <br></br>
         <b><span id="images-count">{images ? Math.max(images.length - 1, 0) : 0}</span></b> imported pictures from Google Drive
-        <div id="images-container">
-          <br></br>
-          {images && images.map((item, i) => {
-            if (item.mimeType === 'image/jpeg' || item.mimeType === 'image/heif') {
-              const thumbnailUrl = `https://drive.google.com/thumbnail?id=${item.id}`;
-              const fullUrl = `https://drive.google.com/file/d/${item.id}/view?usp=drive_link`;
-
-              return (
-                <a key={i} target="_blank" href={fullUrl} data-fancybox="gallery">
-                  <img src={thumbnailUrl} alt={"a picture"} className="img-fluid rounded thumbnail" />
+        <div id="images-container" ref={containerRef}>
+          {rows.map((row, ri) => (
+            <div className="gallery-row" key={ri} style={{ height: row.height }}>
+              {row.items.map((item) => (
+                <a
+                  key={item.id}
+                  className="gallery-item"
+                  style={{ width: item.ar * row.height }}
+                  target="_blank"
+                  rel="noreferrer"
+                  href={item.lightboxUrl}
+                  data-fancybox="gallery"
+                  data-type="image"
+                >
+                  <img
+                    src={item.thumbnailUrl}
+                    alt={"a picture"}
+                    className="thumbnail"
+                    loading="lazy"
+                    decoding="async"
+                    onLoad={handleImgLoad(item.id)}
+                  />
                 </a>
-              );
-            }
-          })}
+              ))}
+            </div>
+          ))}
         </div>
       </div>
       <Logo></Logo>

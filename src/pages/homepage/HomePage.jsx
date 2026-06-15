@@ -9,7 +9,7 @@ function HomePage() {
     const animationClass = useAnimateRoute()
 
     // DD/MM/YYYY
-    let lastModifiedWebsiteDate = "11/11/2025";
+    let lastModifiedWebsiteDate = "14/06/2026";
     let lastModifiedResumeDate = "01/01/2026";
 
     const linkSize = "14px";
@@ -22,8 +22,8 @@ function HomePage() {
                         <u>Hey!</u>
                     </div>
 
-                    I'm Yufeng, a third year <b>Honours Computer Science </b> student at Carleton University located in Ottawa, Ontario.
-                    A lot of things interest me, ranging from programming, AI and robotics, to Formula 1, playing music and travelling.
+                    I'm Yufeng, a fourth year <b>Honours Computer Science </b> student at Carleton University located in Ottawa, Ontario.
+                    A lot of things interest me, ranging from programming, AI and robotics, to swimming and learning languages.
                     <br></br>
                     <br></br>
                     You can find the online version of my resume <a href={Resume} target="_blank" rel="noreferrer"><b>here<img src={Link} width={linkSize} height={linkSize}></img></b></a> (last updated {lastModifiedResumeDate})
@@ -37,9 +37,9 @@ function HomePage() {
                     </div>
                     <ul>
                         <li>Implementing AI/ML Research Papers</li>
-                        <li>Learning Japanese</li>
+                        <li>Learning Mandarin</li>
                         <li>Building robots</li>
-                        <li>Sketching landscapes</li>
+                        <li>Swimming</li>
                     </ul>
                 </div>
 
@@ -48,7 +48,6 @@ function HomePage() {
                         <div className="header">
                             <u>Contact Me</u>
                         </div>
-                        Get in touch with me at <b>yufeng.liu15@gmail.com</b>, or click on one of the links below:
                         <div className="media-links">
                             <a href='https://x.com/yufeng_liu15' target="_blank" rel="noreferrer"><b>Twitter</b><img src={Link} width={linkSize} height={linkSize}></img></a> / <a href='https://github.com/yufengliu15' target="_blank" rel="noreferrer"><b>Github</b><img src={Link} width={linkSize} height={linkSize}></img></a> / <a href='https://www.linkedin.com/in/liuyuf/' target="_blank" rel="noreferrer"><b>LinkedIn</b><img src={Link} width={linkSize} height={linkSize}></img></a>
                         </div>
