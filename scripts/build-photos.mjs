@@ -3,7 +3,7 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
 
-const SRC_DIR = path.resolve('photos-src');
+const SRC_DIR = path.resolve('src/assets/photosrc');
 const OUT_DIR = path.resolve('public/gallery');
 const THUMB_MAX = 800;   // longest side of the grid thumbnail
 const FULL_MAX = 2048;   // longest side of the lightbox image
