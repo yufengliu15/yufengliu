@@ -65,7 +65,7 @@
 {
   "id": "project7",
   "title": "Anki Guitar Fretboard",
-  "description": "Created a custom Anki deck for learning guitar fretboard. Has over 450 downloads with positive reviews.",
+  "description": "Created a custom Anki deck for learning guitar fretboard. Has 1200+ downloads with positive reviews.",
   "technologies": ["Python", "Anki"],
   "image": "Anki-icon.png",
   "link": "https://github.com/yufengliu15/anki-guitar-fretboard",

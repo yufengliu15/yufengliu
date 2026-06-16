@@ -26,7 +26,10 @@
 }
 
 .gallerypage-body{
-    margin: 5%;
+    margin: 5% 3% 0% 5%;
+    margin-top: 3%;
+    height: 80vh;
+    overflow: auto;
     padding-right: 2%;
     background-color: #f5f589;
 }

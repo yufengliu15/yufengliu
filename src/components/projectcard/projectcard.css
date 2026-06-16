@@ -111,3 +111,27 @@
     transform: none;
   }
 }
+
+/* Mobile: stack image + text instead of overlaying, and let the card grow to
+   fit the description so long text is never clipped. */
+@media (max-width: 700px) {
+  .project-card {
+    aspect-ratio: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-image {
+    position: relative;
+    inset: auto;
+    aspect-ratio: 3 / 2;
+  }
+  .project-overlay {
+    position: relative;
+    inset: auto;
+    background-color: rgba(0, 178, 255, 0.72);
+  }
+  .project-overlay-inner {
+    opacity: 1;
+    transform: none;
+  }
+}

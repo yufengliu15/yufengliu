@@ -77,3 +77,33 @@ hr {
     margin-bottom: 0%;
 }
 
+/* Custom scrollbar for the in-page scroll containers (project + gallery).
+   Thumb turns brand cyan on hover to signal it's interactive.
+   (Hover color is a WebKit feature; Firefox gets the themed thin bar.) */
+.projectpage-body,
+.gallerypage-body {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+.projectpage-body::-webkit-scrollbar,
+.gallerypage-body::-webkit-scrollbar {
+    width: 10px;
+}
+
+.projectpage-body::-webkit-scrollbar-track,
+.gallerypage-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.projectpage-body::-webkit-scrollbar-thumb,
+.gallerypage-body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.projectpage-body::-webkit-scrollbar-thumb:hover,
+.gallerypage-body::-webkit-scrollbar-thumb:hover {
+    background-color: #00B2FF;
+}
+
